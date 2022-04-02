@@ -1,0 +1,10 @@
+@include breakpoint(lg) {
+
+    .header__burger {
+        display: block;
+    }
+
+    .menu-nav{
+        display: none;
+    }
+}

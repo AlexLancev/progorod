@@ -1,0 +1,66 @@
+$fonts_mont: 'Montserrat', sans-serif;
+$color_black: #2e2e2e;
+$fz_16: 16px;
+$fz_30: 30px;
+$fz_18: 18px;
+$fw_400: 400;
+$fw_500: 500;
+$fw_700: 700;
+
+
+
+@mixin breakpoint($point) {
+
+    @if $point == lg {
+        @media(max-width: 992px) {@content;}
+    }
+    @else if $point == md {
+        @media(max-width: 768px) {@content;}
+    }
+    @else if $point == sm {
+        @media(max-width: 576px) {@content;}
+    }
+    @else if $point == xxs {
+        @media(max-width: 450px) {@content;}
+    }
+    @else if $point == xs {
+        @media(max-width: 320px) {@content;}
+    }
+}
+
+
+
+
+%title_h3{
+    font-family: $fonts_mont;
+    text-transform: uppercase;
+    font-size: $fz_30;
+    font-weight: $fw_700;
+    color: $color_black;
+}
+
+%title_h4{
+    font-family: $fonts_mont;
+    text-transform: uppercase;
+    font-size: $fz_18;
+    font-weight: $fw_700;
+    line-height: 1.3;
+    color: $color_black;
+}
+
+%link{
+    font-family: $fonts_mont;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    font-size: $fz_16;
+    font-weight: $fw_700;
+    line-height: 1.3;
+    color: #008993;
+    transition: 0.4s;
+    transition-property: color;
+    &:hover{
+        color: $color_black;
+    }
+}
