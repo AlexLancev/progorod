@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .title, .about-competition__title, .application-competition__title {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
@@ -45,21 +44,6 @@ body {
   scroll-behavior: smooth;
 }
 
-html::-webkit-scrollbar {
-  width: 5px;
-  /* ширина для вертикального скролла */
-  height: 0px;
-  /* высота для горизонтального скролла */
-  background-color: white;
-  /* цвет фона */
-  border-radius: 10px;
-}
-
-html::-webkit-scrollbar-thumb {
-  background-color: #afafaf;
-  border-radius: 10px;
-}
-
 *,
 *:before,
 *:after {
@@ -68,6 +52,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
+  min-width: 320px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -838,3 +823,5 @@ button {
 .footer__text strong {
   font-weight: 700;
 }
+
+/*# sourceMappingURL=style.css.map */
