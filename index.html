@@ -17,14 +17,17 @@
         <div class="wrapper">
 
             <header class="header">
+
+                <h1 class="visually-hidden">Конкурс социально-предпринимательских проектов</h1>
+
                 <div class="container">
 
                     <div class="header__inner">
 
-                        <div class="logo">
-                            <img src="images/logo.png" alt="logo">
+                        <a class="logo">
+                            <img src="images/logo.png" alt="Логотип компании ПРОГОРОД">
                             <span>PROГород</span>
-                        </div>
+                        </a>
 
                         <nav class="menu-nav">
                             <ul class="menu__list">
@@ -56,9 +59,9 @@
                             </ul>
                         </nav>
 
-                        <div class="header__burger">
+                        <button type="button" class="header__burger">
                             <span></span>
-                        </div>
+                        </button>
 
                         <nav class="nav__list-device">
                             <ul class="nav__list">
@@ -104,13 +107,13 @@
                                     <img src="images/about.png" alt="about-competition">
                                 </figure>
                                 <div class="about-competition__info">
-                                    <h3 class="about-competition__title title">
+                                    <h2 class="about-competition__title title">
                                         О КОНКУРСЕ
-                                    </h3>
-                                    <h4 class="about-competition__heading heading">
+                                    </h2>
+                                    <h3 class="about-competition__heading heading">
                                         Прими участие в конкурсе
                                         социально-предпринимательских проектов!
-                                    </h4>
+                                    </h3>
                                     <p class="about-competition__text">
                                         Мы ищем инициативных лидеров,
                                         которые готовы к переменам.
@@ -138,13 +141,13 @@
                                 <p class="application-competition__subtitle">
                                     ПРИЕМ ЗАЯВОК ЗАВЕРШЕН!
                                 </p>
-                                <a href="#" class="application-competition__membership membership">
+                                <a class="application-competition__membership membership">
                                     Требования к участникам
                                 </a>
                             </div>
                             <div class="application-competition__inner">
 
-                                <div class="application-competition__projects application-competition__box">
+                                <div tabindex="0" class="application-competition__projects application-competition__box">
                                     <p class="application-competition__text">
                                             У ВАС<br>
                                         <span>
@@ -157,16 +160,44 @@
                                             ДО 300 000 РУБЛЕЙ
                                         </span>
                                     </p>
-                                    <a class="application-competition__btn btn" href="#">
+                                    <button data-href="popup" class="application-competition__btn btn popup-link">
                                         Подать заявку
-                                    </a>
+                                    </button>
                                 </div>
+
+                                <!-- modal-start -->
+                                <div id="popup" class="popup" role="alert">                             
+                                <div class="popup__body">
+                    <div class="popup__content">
+                        <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
+
+                        <form action="#" method="post" class="form">
+                            <fieldset>
+
+                                <legend class="form__title">Оставьте заявку</legend>
+
+                               
+                                    <input class="form__input" type="text" name="Имя" placeholder="Ваше имя">
+                                
+                                
+                                    <input class="form__input" type="tel" name="Номер телефона" placeholder="Номер телефона">
+                                
+
+                                <button class="form__btn btn" type="submit">Отправить</button>
+
+                            </fieldset>
+                        </form>
+
+                    </div>
+                                </div>
+                                </div>
+                                <!-- modal-end -->
 
                                 <figure class="application-competition__image">
                                     <img src="images/konkurs.png" alt="konkurs">
                                 </figure>
 
-                                <div class="application-competition__idea application-competition__box">
+                                <div tabindex="0" class="application-competition__idea application-competition__box">
                                     <p class="application-competition__text">
                                             У ВАС<br>
                                         <span>
@@ -179,10 +210,38 @@
                                             ДО 50 000 РУБЛЕЙ
                                         </span>
                                     </p>
-                                    <a class="application-competition__btn btn" href="#">
+                                    <button data-href="popups" class="application-competition__btn btn popup-link">
                                         Подать заявку
-                                    </a>
+                                    </button>
                                 </div>
+
+                                <!-- modal-start -->
+                                <div id="popups" class="popup" role="alert">                             
+                <div class="popup__body">
+                    <div class="popup__content">
+                        <button type="button" class="popup__close close-popup" aria-label="закрыть модальное окно"></button>
+
+                        <form action="#" method="post" class="form">
+                            <fieldset>
+
+                                <legend class="form__title">Оставьте заявку</legend>
+
+                               
+                                    <input class="form__input" type="text" name="Имя" placeholder="Ваше имя">
+                                
+                                
+                                    <input class="form__input" type="tel" name="Номер телефона" placeholder="Номер телефона">
+                                
+
+                                <button class="form__btn btn" type="submit">Отправить</button>
+
+                            </fieldset>
+                        </form>
+
+                    </div>
+                </div>
+                                </div>
+                                <!-- modal-end -->
 
                             </div>
                         </div>
@@ -199,7 +258,7 @@
                         </p>
                         <div class="membership__box">
                             <img src="images/pdf.png" alt="pdf">
-                            <a class="contest-winners__membership membership" href="#">
+                            <a class="contest-winners__membership membership">
                                 Положение о конкурсе
                             </a>
                         </div>
@@ -250,7 +309,7 @@
                                     </p>
                                     <div class="membership__box">
                                         <img src="images/pdf.png" alt="pdf">
-                                        <a class=" membership" href="#">
+                                        <a class="membership">
                                             Программа
                                         </a>
                                     </div>
@@ -307,13 +366,13 @@
                         </p>
                         <p class="footer__text">
                             <strong>
-                                ПО ТЕЛЕФОНУ «ГОРЯЧЕЙ ЛИНИИ» <a class="phone-link" href="tel:88003336878">8-800-333-68-78</a> С 9.00 ДО 18.00 ЧАСОВ
+                                ПО ТЕЛЕФОНУ «ГОРЯЧЕЙ ЛИНИИ» <a class="phone-link" href="tel:88003336878" aria-label="Набрать номер телефона обратной связи">8-800-333-68-78</a> С 9.00 ДО 18.00 ЧАСОВ
                             </strong>
                             ПО МОСКОВСКОМУ ВРЕМЕНИ (ЗВОНОК ПО ВСЕЙ РОССИИ БЕСПЛАТНЫЙ)
                         </p>
                         <p class="footer__text">
                             <strong>
-                                И ЭЛЕКТРОННОМУ АДРЕСУ <a class="email-link" href="mailto:KONKURS@NB-FUND.RU">KONKURS@NB-FUND.RU</a> 
+                                И ЭЛЕКТРОННОМУ АДРЕСУ <a class="email-link" href="mailto:KONKURS@NB-FUND.RU" aria-label="Написать нам на электронную почту">KONKURS@NB-FUND.RU</a> 
                             </strong>
                             (В ТЕМЕ ПИСЬМА НЕОБХОДИМО УКАЗАТЬ — «КОНКУРС «PROГОРОД»)
                         </p>
@@ -324,7 +383,8 @@
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="js/main.js"></script>
+        <script src="js/burger.js"></script>
+        <script src="js/modal.js"></script>
 
     </body>
 
